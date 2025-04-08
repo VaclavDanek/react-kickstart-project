@@ -35,3 +35,4 @@ yarn.lock
 tmp/*
 !tmp/readme.md
 webpack-report
+src/__tests__/__snapshots__/*
