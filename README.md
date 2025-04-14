@@ -7,7 +7,7 @@ React starter-kit project
 * babel
 * eslint
 * mobx
-* react-router
+* react-router-dom
 * axios
 * jest
 * i18next

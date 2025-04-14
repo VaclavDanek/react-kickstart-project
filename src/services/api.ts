@@ -14,7 +14,7 @@ export const apis = {
       'Content-Type': 'application/json;charset=UTF-8',
     },
   }),
-}
+} satisfies Record<string, AxiosInstance>
 
 Object.values(apis).forEach((api: AxiosInstance) => api.interceptors.request.use(...requestInterceptor))
 Object.values(apis).forEach((api: AxiosInstance) => api.interceptors.response.use(...responseInterceptor))
@@ -45,6 +45,6 @@ const endpoints = {
     apis.example.get(`/`, { params: { name, country_id, max_age } }),
 
   // delete
-}
+} satisfies Record<string, (...args: any[]) => Promise<AxiosResponse>>
 
 export default endpoints
